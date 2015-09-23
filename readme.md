@@ -1,12 +1,4 @@
----
-title: Tic Tac Toe Lab
-type: lab
-duration: "8"
-creator:
-    name: Micah Rich
-    city: LA
-competencies: Programming, HTM and CSS
----
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
 # Tic Tac Toe Javascript
 
@@ -20,6 +12,9 @@ For this lab, you'll be building a tic tac toe game in HTML, CSS, and pure JavaS
 ## Exercise
 
 #### Requirements
+
+- Fork this repo
+- Clone this repo into your ~/code/labs
 
 - A user should be able to click on different squares to make a move
 - Every click will alternate between marking an `X` and `O`
@@ -59,6 +54,17 @@ For this lab, you'll be building a tic tac toe game in HTML, CSS, and pure JavaS
     * Hint: Determine a set of winning combinations. Check those
       combinations on the board contents after every move.
 
+
+#### Submission
+1. Upon completion, run the following commands
+
+  ```
+  git add .
+  git commit -m "done"
+  git push origin master
+  ```
+1. Navigate to your repo and create a Pull Request
+1. Put the link to Pull Request to the Student Excel File
 
 #### Starter code
 
