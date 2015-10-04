@@ -78,6 +78,7 @@ function recordMove () {
 		if (currentPlayerIsX) {
 			X_moves.push(moveSquare);
 			target.innerHTML = '<span>X</span>';
+			target.className = target.className + " blue"
 			if (hasWon(X_moves)) {
 				alert ("Game over, X wins!");
 				return true;
@@ -87,6 +88,7 @@ function recordMove () {
 		} else {
 			O_moves.push(moveSquare);
 			target.innerHTML = '<span>O</span>';
+			target.className = target.className + " red"
 			if (hasWon(O_moves)) {
 				alert ("Game over, O wins!");
 				return true;

@@ -16,7 +16,7 @@ div.square {
 	height: 100px;
 	width: 100px;
 	background: #CBC8C9;
-	color: #F80B0E;
+	color: white;
 	ta
 }
 
@@ -28,4 +28,12 @@ div span {
 	margin: 0;
 	font-size: 90px;
 
+}
+
+div.blue {
+	background-color: #0000FF;
+}
+
+div.red {
+	background-color: #FF0000;
 }
