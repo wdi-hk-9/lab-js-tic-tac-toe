@@ -1,8 +1,8 @@
 //Global variables + default values
 
-var turn = 1; //even = X's turn. odd = Y's turn
+var turn = 1; //even = X's turn. odd = O's turn
 var Xscore = 0;
-var Yscore = 0;
+var Oscore = 0;
 
 //Global function that can be called anytime:
 
@@ -27,13 +27,13 @@ function clickElementToLabelX(event){
 
 
 
-//function 2a
+//function 2b
 	//- change innerHTML in an element = O
 	// - disable button + add a class and change its color to blue (by using CSS pseudo style)
-function clickElementToLabelY(event){
-    event.target.innerHTML = "Y";
+function clickElementToLabelO(event){
+    event.target.innerHTML = "O";
 	event.target.disabled = true;
-	event.target.className = "MarkedY";
+	event.target.className = "MarkedO";
   };
 
 
@@ -95,46 +95,46 @@ function IsXaWinner(){
 
 
 
-//function 4 - Check if Y is winner. 
+//function 4 - Check if O is winner. 
 
-function IsYaWinner(){
+function IsOaWinner(){
 
 	if(
-	document.getElementById("b1").innerHTML === "Y"
-	&& document.getElementById("b2").innerHTML === "Y"
-	&& document.getElementById("b3").innerHTML === "Y"
+	document.getElementById("b1").innerHTML === "O"
+	&& document.getElementById("b2").innerHTML === "O"
+	&& document.getElementById("b3").innerHTML === "O"
 	||
-	document.getElementById("b4").innerHTML === "Y"
-	&& document.getElementById("b5").innerHTML === "Y"
-	&& document.getElementById("b6").innerHTML === "Y"
+	document.getElementById("b4").innerHTML === "O"
+	&& document.getElementById("b5").innerHTML === "O"
+	&& document.getElementById("b6").innerHTML === "O"
 	||
-	document.getElementById("b7").innerHTML === "Y"
-	&& document.getElementById("b8").innerHTML === "Y"
-	&& document.getElementById("b9").innerHTML === "Y"
+	document.getElementById("b7").innerHTML === "O"
+	&& document.getElementById("b8").innerHTML === "O"
+	&& document.getElementById("b9").innerHTML === "O"
 	||
-	document.getElementById("b1").innerHTML === "Y"
-	&& document.getElementById("b4").innerHTML === "Y"
-	&& document.getElementById("b7").innerHTML === "Y"
+	document.getElementById("b1").innerHTML === "O"
+	&& document.getElementById("b4").innerHTML === "O"
+	&& document.getElementById("b7").innerHTML === "O"
 	||
-	document.getElementById("b2").innerHTML === "Y"
-	&& document.getElementById("b5").innerHTML === "Y"
-	&& document.getElementById("b8").innerHTML === "Y"
+	document.getElementById("b2").innerHTML === "O"
+	&& document.getElementById("b5").innerHTML === "O"
+	&& document.getElementById("b8").innerHTML === "O"
 	||
-	document.getElementById("b3").innerHTML === "Y"
-	&& document.getElementById("b6").innerHTML === "Y"
-	&& document.getElementById("b9").innerHTML === "Y"
+	document.getElementById("b3").innerHTML === "O"
+	&& document.getElementById("b6").innerHTML === "O"
+	&& document.getElementById("b9").innerHTML === "O"
 	||
-	document.getElementById("b1").innerHTML === "Y"
-	&& document.getElementById("b5").innerHTML === "Y"
-	&& document.getElementById("b9").innerHTML === "Y"
+	document.getElementById("b1").innerHTML === "O"
+	&& document.getElementById("b5").innerHTML === "O"
+	&& document.getElementById("b9").innerHTML === "O"
 	||
-	document.getElementById("b3").innerHTML === "Y"
-	&& document.getElementById("b5").innerHTML === "Y"
-	&& document.getElementById("b7").innerHTML === "Y"
-	){Yscore += 1};
+	document.getElementById("b3").innerHTML === "O"
+	&& document.getElementById("b5").innerHTML === "O"
+	&& document.getElementById("b7").innerHTML === "O"
+	){Oscore += 1};
 
-	if(Yscore===1){
-		alert("Y is the Winner!");
+	if(Oscore===1){
+		alert("O is the Winner!");
 		reloadPage();
 	};
 }
@@ -144,39 +144,39 @@ function changeH2toX(){
 	document.getElementById("whoSTurn").innerHTML = "It is X's turn"
 }
 
-function changeH2toY(){
-	document.getElementById("whoSTurn").innerHTML = "It is Y's turn"
+function changeH2toO(){
+	document.getElementById("whoSTurn").innerHTML = "It is O's turn"
 }
 
 // Function 7 - show alert when draw game 
 	function drawGame(){
-		if(turn === 10){
-		document.getElementById("whoSTurn").innerHTML = "This is a draw game! Please restart the game"
-		alert("This is a draw game! Please restart the game");
+		if(turn === 10 && Oscore !== 1 && Xscore !== 1){
+		document.getElementById("whoSTurn").innerHTML = "This is a draw game! Please restart the game."
+		alert("This is a draw game! Please restart the game.");
 		reloadPage();
 		}
 	}
 
-//Make a combo function 7 for the button to trigger
-	// Check whether it is X's move or Y's move
+//Make a combo function 8 for the button to trigger
+	// Check whether it is X's move or O's move
 	// if turn = even, it is X's moves with following steps
 			// -> change innerHTML of button = x && disable the click button
 			// -> turn counter +1
 			// -> check winner
-	// if turn = odd, it is Y's moves with same steps
+	// if turn = odd, it is O's moves with same steps
 function combo(){
 	
  	if(turn % 2 === 0){
 	clickElementToLabelX(event);
 	turnCounter();
 	IsXaWinner();
-	changeH2toY();
+	changeH2toO();
 	drawGame();
 	}
 	else {
-	clickElementToLabelY(event);
+	clickElementToLabelO(event);
 	turnCounter();
-	IsYaWinner();
+	IsOaWinner();
 	changeH2toX();
 	drawGame();
 	}
