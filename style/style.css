@@ -1,0 +1,41 @@
+#box {
+	width: 350px;
+	height: 320px;
+	border: 2px solid black;
+}
+
+#resetbutton{
+	width: 70px;
+	height: 40px;
+	font-size: 20px;
+	color: white;
+}
+p{
+	width: 350px;
+	text-align: center;
+	font-size: 25px;
+	margin: 10px 0;
+	color: orange;
+}
+button {
+	height: 100px;
+	width: 110px;
+	border: 1px solid black;
+	margin: 3px 2px;
+	font-size: 30px;
+	background-color: grey;
+}
+
+button.red {
+	background-color: #990033;
+	color: #FF6600;
+}
+
+button.blue {
+	background-color: #000066;
+	color: #00FFFF;
+}
+
+button.grey {
+	background-color: grey;
+}
