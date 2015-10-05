@@ -38,6 +38,8 @@ var markCell = function () {
 			}
 			else if (this.innerHTML === "O") {
 				this.setAttribute("id", "yellow_background");
+				var cellNum = parseInt(this.id);
+				enterSpaceInBoard(cellNum, turn);
 			}
 		switchTurn();
 	}
@@ -50,7 +52,7 @@ function enterSpaceInBoard(cellNum, turn) {
     var row;
     if (cellNum < 3) {
         row = 0;
-]    } 
+    } 
     else if (cellNum < 6) {
         row = 1;
     } 
@@ -95,9 +97,9 @@ function checkWinner(row, col, turn) {
 		return turn;
 		alert(turn + " wins!");
 	}
-	//else {
-	//	alert("It's a draw");
-	//}
+	else {
+		alert("It's a draw");
+	}
 }
 
 function switchTurn() {
@@ -116,6 +118,7 @@ var board = [
     [null, null, null],
     [null, null, null]
 ];
+
 var clearBoard = function() {
 	var squares = document.getElementsByClassName("square");
     for (var i = 0; i < squares.length; i++) {
