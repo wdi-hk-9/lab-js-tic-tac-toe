@@ -61,6 +61,7 @@ function clearBoard (){
 	board = document.getElementById("board");
 	for (i = 0; i < board.children.length; i++) {
 		board.children[i].innerHTML = "";
+		board.children[i].className = "square";
 	}
 	currentPlayerIsX = true;
 	X_moves = [];
