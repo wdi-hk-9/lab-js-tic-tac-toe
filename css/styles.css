@@ -1,0 +1,39 @@
+#status {
+	font-size: 40px;
+}
+
+section {
+	position: relative;
+	display: block;
+	height: 350px;
+	width: 350px;
+}
+
+
+div.square {
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background: #CBC8C9;
+	color: white;
+	ta
+}
+
+div span {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	padding: 0;
+	margin: 0;
+	font-size: 90px;
+
+}
+
+div.blue {
+	background-color: #0000FF;
+}
+
+div.red {
+	background-color: #FF0000;
+}
