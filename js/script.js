@@ -59,7 +59,8 @@ window.onload = function(){
 			if (confirm(winner(statusArray) + " has WON! Restart the Game?")){
 				reset();
 			}
-		} else if(winner(statusArray) == "" && document.getElementsByClassName("modified").length == 9){
+		}
+		if(winner(statusArray) == "" && document.getElementsByClassName("modified").length == 9){
 			alert("It's a draw!");
 			reset();
 		}
