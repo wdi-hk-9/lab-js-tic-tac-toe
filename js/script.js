@@ -59,7 +59,9 @@ window.onload = function(){
 			if (confirm(winner(statusArray) + " has WON! Restart the Game?")){
 				reset();
 			}
-
+		} else if(winner(statusArray) == "" && document.getElementsByClassName("modified").length == 9){
+			alert("It's a draw!");
+			reset();
 		}
 	}
 
@@ -80,7 +82,7 @@ window.onload = function(){
 		do{
 			if(array[0][i]!==null){
 				var base = array[0][i];
-				if(array[1][i]==base && array[2][i]==base){
+				if(base == array[1][i] == array[2][i]){
 					winnerPlayer = base;
 				}
 			};
@@ -91,7 +93,7 @@ window.onload = function(){
 		do{
 			if(array[i][0]!==null){
 				var base = array[i][0];
-				if(array[i][1]==base && array[i][2]==base){
+				if(base == array[i][1] == array[i][2]){
 					winnerPlayer = base;
 				}
 			};
