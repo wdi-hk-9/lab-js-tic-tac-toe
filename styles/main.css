@@ -1,0 +1,65 @@
+
+body{
+font-style: Arial;
+margin: 0px auto;
+text-align: center
+}
+
+h1{
+font-family: Arial;
+font-size: 30px;
+font-weight: bold;
+text-decoration: underline;
+line-height: 70%;
+}
+
+h2{
+font-family: Arial;
+font-size: 25px;
+line-height: 70%;
+font-weight: normal;
+}
+
+table{
+width:300px;
+height:300px;
+margin: 0px auto;
+text-align: center
+}
+
+td{
+padding: 10px;
+margin: 0px;
+
+}
+
+button{
+font-size: 40px;
+border-radius: 5px;
+border: 1px solid #cccccc;
+margin: 0 auto;
+padding: 10px;
+width: 80px;
+height: 80px;
+background-image: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+}
+
+#reset{
+background-image: linear-gradient(rgb(98, 196, 98), rgb(81, 163, 81));
+width: 100px;
+height: 50px;
+font-size: 18px;
+color: white;
+}
+
+.MarkedX{
+background-image: linear-gradient(rgb(222, 91, 91), rgb(180, 47, 47));
+color: white;
+font-size: 40px
+}
+
+.MarkedO{
+background-image: linear-gradient(rgb(0, 136, 204), rgb(0, 68, 204));
+color: white;
+font-size: 40px
+}

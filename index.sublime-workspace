@@ -1,0 +1,251 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"backgroud",
+				"background-color"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"s",
+				"scissors"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 448.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Bryan/code/labs/js-debugging-lesson/starter-code/scripts/app.js",
+		"/Users/Bryan/code/labs/js-debugging-lesson/starter-code/scripts/debug.js",
+		"/Users/Bryan/code/labs/js-debugging-lesson/starter-code/index.html",
+		"/Users/Bryan/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Bryan/code/WDI_HK_9/02-front-end-intro/css-site-replication-lab/solution-code/css/main.css",
+		"/Users/Bryan/code/box-model/css/style.css",
+		"/Users/Bryan/code/box-model/index.html",
+		"/Users/Bryan/code/labs/lab-html-css-website/starter-code/portfolio.html",
+		"/Users/Bryan/code/labs/lab-html-css-website/starter-code/css/common.css",
+		"/Users/Bryan/code/labs/lab-html-css-website/starter-code/index.html",
+		"/Users/Bryan/code/labs/lab-html-css-website/starter-code/sample-copy.txt",
+		"/Users/Bryan/code/labs/lab-html-css-website/readme.md",
+		"/Users/Bryan/code/labs/lab-html-css-website/starter-code/images/startup-matchmaker-deliverable.png",
+		"/Users/Bryan/Documents/untitled.html",
+		"/Users/Bryan/code/labs/my-favourite-things/books/JRRTolkein/lordOfTheRings.txt",
+		"/Users/Bryan/code/labs/my-favourite-things/books/JRRTolkein/theHobbits.txt",
+		"/Users/Bryan/code/labs/my-favourite-things/books/JKRowling/harryPotter.txt",
+		"/Users/Bryan/.zshrc",
+		"/Users/Bryan/fundamentals/wdi-fundamentals-rps/app/js/rockpaperscissors.js",
+		"/Users/Bryan/fundamentals/wdi-fundamentals-rps/app/index.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"hi\"",
+			"hi",
+			"prompt",
+			"alert",
+			"  ",
+			"ul",
+			"	top: 50;\n	right: 50;",
+			"length",
+			"block",
+			"inline",
+			"div",
+			"li",
+			"div",
+			"                    ",
+			"li",
+			"div",
+			"li",
+			"div",
+			"li",
+			"div",
+			"instructors",
+			":"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
