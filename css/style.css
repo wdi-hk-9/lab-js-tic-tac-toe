@@ -1,0 +1,71 @@
+body{
+	font-family:Arial;
+	text-align:center;
+}
+header{
+	width:1110px;
+	text-align:center;
+	margin:0 auto;
+}
+main{
+	width:1110px;
+	margin:0 auto;
+	text-align:center;
+}
+section{
+	display:inline-block;
+	vertical-align:middle;
+}
+h1{
+	text-align:center;
+	font-size:100px;
+	margin:0;
+}
+.board-row{
+  display:block;
+  width:680px;
+  margin:0 auto;
+  background-color:white;
+  text-align:center;
+}
+.X{
+	background-color:blue;
+}
+.O{
+	background-color:red;
+}
+input[type=button]{
+	font-size:20px;
+	margin-bottom:20px;
+}
+.board-row *{
+	display:inline-block;
+	height:200px;
+	width:200px;
+	/*background-color:red;*/
+	margin:10px;
+	border:1px solid black;
+	vertical-align:bottom;
+	font-size:180px;
+}
+.board-row *:hover{
+	/*background-color:white;*/
+	cursor:pointer;
+}
+#left-player{
+	background-color:blue;
+}
+#right-player{
+	background-color:red;
+}
+.player{
+	height:550px;
+	width:150px;
+	margin:20px;
+	border:0px solid black;
+	vertical-align: center;
+	padding-top:50px;
+	border-radius:20px;
+	font-size:50px;
+	visibility:hidden;
+}
